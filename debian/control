@@ -1,0 +1,25 @@
+## This file is part of Whonix.
+## Copyright (C) 2012 - 2014 Patrick Schleizer <adrelanos@riseup.net>
+## See the file COPYING for copying conditions.
+
+Source: sdwdate-plugin-anon-shared-con-check
+Section: misc
+Priority: optional
+Maintainer: Patrick Schleizer <adrelanos@riseup.net>
+Build-Depends: debhelper (>= 8), faketime, git
+Homepage: https://github.com/Whonix/sdwdate-plugin-anon-shared-con-check
+Vcs-Browser: https://github.com/Whonix/sdwdate-plugin-anon-shared-con-check
+Vcs-Git: https://github.com/Whonix/sdwdate-plugin-anon-shared-con-check.git
+Standards-Version: 3.9.4
+
+Package: sdwdate-plugin-anon-shared-con-check
+Architecture: all
+Depends: sdwdate, anon-shared-helper-scripts, ${misc:Depends}
+Description: Sdwdate Connection Checker Plugin for Anonymity Distributions
+ In context of Anonymity Distributions, that route all traffic through an
+ anonymizer, sdwdate should wait until the anonymizer is ready to establish
+ anonymous connections.
+ .
+ This plugin integrates with sdwdate, checks if Tor is enabled (on Gateway
+ only), checks that there is currently no packager manager running, and checks
+ that Tor is ready to establish connections.
