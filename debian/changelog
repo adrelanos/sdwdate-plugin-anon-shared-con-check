@@ -1,3 +1,9 @@
+sdwdate-plugin-anon-shared-con-check (3:1.0-1) unstable; urgency=low
+
+  * New upstream version (local package).
+
+ -- Patrick Schleizer <adrelanos@riseup.net>  Wed, 03 Jun 2015 15:00:14 +0000
+
 sdwdate-plugin-anon-shared-con-check (3:0.9-1) unstable; urgency=low
 
   * New upstream version (local package).
